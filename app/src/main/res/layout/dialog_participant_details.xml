@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    android:layout_margin="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Participant Details"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/dialogParticipantImage"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_person"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/dialogParticipantName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Participant Name"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DDDDDD"
+            android:layout_marginBottom="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Registration Status: "
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/dialogRegistrationStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="REGISTERED" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Registration Date: "
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/dialogRegistrationDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2023-12-01" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bibNumberLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bib Number: "
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/dialogBibNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A123" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/finishTimeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Finish Time: "
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/dialogFinishTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:45:30" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/paceLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pace: "
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/dialogPace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4:33 min/km" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/dialogCloseButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Close" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView> 
